@@ -2,5 +2,7 @@
 # long-description: Creates a partitioned SD card image. FIT image
 # is located in the first partition.
 
-part / --source rootfs --ondisk mmcblk --fstype=ext4 --label rootfs0 --align 4096
-part /boot --source bootimg-partition --ondisk mmcblk --fstype=ext4 --label appfs0 --align 4096
+part --ondisk mmcblk --fstype=ext4 --label rootfs0 --align 4096 --fixed-size=2G  --source rootfs
+part --ondisk mmcblk --fstype=ext4 --label appfs0  --align 4096 --fixed-size=50M --source bootimg-partition
+part --ondisk mmcblk --fstype=ext4 --label rootfs1 --align 4096 --fixed-size=2G
+part --ondisk mmcblk --fstype=ext4 --label appfs1  --align 4096 --fixed-size=50M
