@@ -19,4 +19,6 @@ IMAGE_INSTALL = "\
 # 1G Rootfs
 IMAGE_ROOTFS_SIZE = "1048576"
 
+IMAGE_FSTYPES = "wic ext4"
+
 inherit core-image

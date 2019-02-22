@@ -5,6 +5,8 @@ PACKAGE_INSTALL = ""
 IMAGE_LINGUAS = ""
 IMAGE_FEATURES = ""
 
+IMAGE_FSTYPES = "ext4"
+
 inherit image
 
 deploy_fit() {
