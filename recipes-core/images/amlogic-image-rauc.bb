@@ -13,6 +13,7 @@ IMAGE_INSTALL = "\
     opkg \
     opkg-collateral \
     ${CORE_IMAGE_EXTRA_INSTALL} \
+    rauc \
     "
 
 # 1G Rootfs
